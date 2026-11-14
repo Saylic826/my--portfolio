@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samruddhi Choudhari | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9f7;
+    color: #26352c;
+    line-height: 1.6;
+}
+
+header {
+    background: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px #00000010;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #547b68;
+}
+
+nav a {
+    text-decoration: none;
+    color: #26352c;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #547b68;
+}
+
+.hero {
+    min-height: 85vh;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #eaf1ec;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #547b68;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 18px;
+    color: #58665c;
+}
+
+.tag {
+    color: #547b68;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #547b68;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.section-title {
+    font-size: 35px;
+    color: #547b68;
+    margin-bottom: 25px;
+}
+
+.about-box, .education-box, .project-box {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000008;
+}
+
+.education-box h3,
+.project-box h3 {
+    margin-bottom: 10px;
+    color: #547b68;
+}
+
+.project-box {
+    margin-bottom: 20px;
+}
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.certificate {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.certificate img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.certificate h3 {
+    margin-top: 12px;
+    color: #547b68;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: #eaf1ec;
+    color: #41634e;
+    padding: 10px 18px;
+    border-radius: 25px;
+}
+
+.contact {
+    background: #eaf1ec;
+    text-align: center;
+    border-radius: 15px;
+}
+
+footer {
+    background: #26352c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 75px 8%;
+    }
+
+    section {
+        padding: 55px 8%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SC.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <div class="tag">WELCOME TO MY PORTFOLIO</div>
+
+    <h1>Hi, I'm <span>Samruddhi<br>Choudhari.</span></h1>
+
+    <p>
+        I am a B.Tech second-year student at JSPM University,
+        Wagholi. I am passionate about technology, artificial
+        intelligence and learning new skills.
+    </p>
+
+    <a href="#about" class="btn">Explore My Portfolio</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-box">
+        <p>
+            Hello! I am Samruddhi Choudhari, currently pursuing
+            my Bachelor of Technology at JSPM University, Wagholi.
+
+            I am interested in Artificial Intelligence and
+            technology. I enjoy exploring new concepts,
+            developing projects and improving my technical
+            knowledge.
+        </p>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-box">
+        <h3>Bachelor of Technology (B.Tech)</h3>
+        <p><strong>University:</strong> JSPM University, Wagholi</p>
+        <p><strong>Academic Year:</strong> Second Year</p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="project-box">
+        <h3>AI Chatbot</h3>
+
+        <p>
+            An Artificial Intelligence based chatbot project
+            designed to interact with users and provide
+            conversational responses.
+
+            This project represents my interest in AI
+            and intelligent applications.
+        </p>
+    </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+    <h2 class="section-title">Internships & Certificates</h2>
+
+    <div class="certificate-grid">
+
+        <div class="certificate">
+            <img src="images/forage-certificate.jpg"
+                 alt="Tata Forage certificate">
+
+            <h3>Tata × Forage</h3>
+
+            <p>GenAI Powered Data Analytics Job Simulation</p>
+
+            <p>Completed: 19 June 2026</p>
+        </div>
+
+        <div class="certificate">
+            <img src="images/codec-certificate.jpg"
+                 alt="Codec Technologies internship certificate">
+
+            <h3>Codec Technologies</h3>
+
+            <p>Artificial Intelligence Intern</p>
+
+            <p>15 May 2026 – 15 June 2026</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+        <span>Artificial Intelligence</span>
+        <span>Communication</span>
+        <span>Teamwork</span>
+        <span>Problem Solving</span>
+        <span>Learning & Research</span>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>
+            Thank you for visiting my portfolio!
+            I would love to connect and explore
+            new learning opportunities.
+        </p>
+
+        <p>Email: Add your email address here</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Samruddhi Choudhari | Student Portfolio</p>
+</footer>
+
+</body>
+</html>
